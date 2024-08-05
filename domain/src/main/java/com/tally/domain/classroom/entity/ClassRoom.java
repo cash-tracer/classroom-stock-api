@@ -14,4 +14,6 @@ public class ClassRoom {
     @Column(name = "classroom_name", nullable = false, unique = true)
     private String name;
 
+    protected ClassRoom() {}
+
 }
