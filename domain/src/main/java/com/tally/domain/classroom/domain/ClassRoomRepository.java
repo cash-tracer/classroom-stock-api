@@ -1,4 +1,4 @@
-package com.tally.domain.classroom.infrastructure.persistence;
+package com.tally.domain.classroom.domain;
 
 import com.tally.domain.classroom.domain.entity.ClassRoom;
 

@@ -1,4 +1,4 @@
-package com.tally.db.classroom.config;
+package com.tally.db.config;
 
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Configuration;

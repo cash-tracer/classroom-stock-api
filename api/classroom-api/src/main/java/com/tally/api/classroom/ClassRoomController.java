@@ -1,7 +1,7 @@
 package com.tally.api.classroom;
 
 import com.tally.domain.classroom.domain.entity.ClassRoom;
-import com.tally.domain.classroom.service.ClassRoomService;
+import com.tally.domain.classroom.application.ClassRoomService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,8 +19,8 @@ public class ClassRoomController {
     }
 
     @GetMapping("/v1/classrooms")
-    public List<ClassRoom> getAll() {
-        return classRoomService.getAll();
+    public List<ClassRoom> readClassRooms() {
+        return classRoomService.readAll();
     }
 
 }

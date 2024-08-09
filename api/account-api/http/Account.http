@@ -1,0 +1,8 @@
+### AccountController#registerAccount
+POST http://localhost:8080/api/v1/auth/sign-up
+Content-Type: application/json
+
+{
+  "email": "hello@classroom.kr",
+  "password": "hello!"
+}
