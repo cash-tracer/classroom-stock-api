@@ -1,7 +1,10 @@
 package com.tally.domain.account.application.model;
 
+import lombok.Getter;
+
 public class AccountCommand {
 
+    @Getter
     public static class RegisterAccount {
 
         private final String email;
@@ -12,12 +15,5 @@ public class AccountCommand {
             this.password = password;
         }
 
-        public String getEmail() {
-            return email;
-        }
-
-        public String getPassword() {
-            return password;
-        }
     }
 }

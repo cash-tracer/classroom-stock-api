@@ -1,0 +1,14 @@
+### ClassroomController#registerClassRoom
+POST http://localhost:8080/api/v1/classrooms
+Content-Type: application/json
+
+{
+    "teacherId": 1,
+    "classroomName": "성재반",
+    "classroomCode": "CLASS02",
+    "schoolCode": "SCHOOL01"
+}
+
+### ClassroomController#readClassRooms
+GET http://localhost:8080/api/v1/classrooms
+Content-Type: application/json

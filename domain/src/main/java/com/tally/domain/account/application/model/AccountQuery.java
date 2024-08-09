@@ -1,9 +1,11 @@
 package com.tally.domain.account.application.model;
 
 import com.tally.domain.account.domain.entity.Account;
+import lombok.Getter;
 
 public class AccountQuery {
 
+    @Getter
     public static class RegisterAccount {
 
         private final Long accountId;
@@ -18,11 +20,6 @@ public class AccountQuery {
             return new RegisterAccount(account.getId(), account.getEmail());
         }
 
-        public Long getAccountId() {
-            return accountId;
-        }
     }
-
-
 
 }

@@ -2,6 +2,8 @@ package com.tally.api.account;
 
 import com.tally.api.account.model.request.AccountInputDto;
 import com.tally.api.account.model.request.AccountInputDtoMapper;
+import com.tally.api.account.model.response.AccountOutputDto;
+import com.tally.api.account.model.response.AccountOutputDtoMapper;
 import com.tally.domain.account.application.AccountService;
 import com.tally.domain.account.application.model.AccountQuery;
 import jakarta.validation.Valid;
@@ -24,6 +26,8 @@ public class AccountController {
     @PostMapping("/v1/auth/sign-up")
     public ResponseEntity<Long> register(@Valid @RequestBody final AccountInputDto.RegisterAccountRequest registerAccountRequest) {
         final AccountQuery.RegisterAccount registerAccount = accountService.signUp(AccountInputDtoMapper.toCommand(registerAccountRequest));
-        return ResponseEntity.ok(registerAccount.getAccountId());
+        final AccountOutputDto.RegisterAccountResponse registerAccountResponse = AccountOutputDtoMapper.toResponse(registerAccount);
+
+        return ResponseEntity.ok(registerAccountResponse.getAccountId());
     }
 }

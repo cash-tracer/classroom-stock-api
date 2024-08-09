@@ -1,0 +1,26 @@
+spring:
+  lifecycle:
+    timeout-per-shutdown-phase: 30s # default 30s (graceful shutdown)
+
+  datasource:
+    hikari:
+      connection-timeout: 3000
+      validation-timeout: 1000
+      max-lifetime: 1800000 # 30 minutes (default)
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+        show-sql: false
+        default_batch_fetch_size: 100 # JPA OneToMany ?? ?? ??
+    open-in-view: false
+
+logging:
+  level:
+    root: info
+
+server:
+  shutdown: graceful
