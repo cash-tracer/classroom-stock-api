@@ -8,5 +8,5 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @Configuration
 @EnableJpaAuditing
 @EntityScan(basePackages = "com.tally.domain.**.entity")
-@EnableJpaRepositories(basePackages = "com.tally.db.**.repository")
+@EnableJpaRepositories(basePackages = "com.tally.db.**.persistence")
 public class JpaConfig {}

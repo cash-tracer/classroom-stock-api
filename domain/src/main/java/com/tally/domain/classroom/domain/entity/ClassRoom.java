@@ -1,4 +1,4 @@
-package com.tally.domain.classroom.entity;
+package com.tally.domain.classroom.domain.entity;
 
 import jakarta.persistence.*;
 

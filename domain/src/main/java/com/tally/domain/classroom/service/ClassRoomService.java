@@ -1,7 +1,7 @@
 package com.tally.domain.classroom.service;
 
-import com.tally.domain.classroom.entity.ClassRoom;
-import com.tally.domain.classroom.persistence.ClassRoomRepository;
+import com.tally.domain.classroom.domain.entity.ClassRoom;
+import com.tally.domain.classroom.infrastructure.persistence.ClassRoomRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,6 +16,6 @@ public class ClassRoomService {
     }
 
     public List<ClassRoom> getAll() {
-        return classRoomRepository.getAll();
+        return classRoomRepository.readClassRooms();
     }
 }

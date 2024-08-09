@@ -1,6 +1,6 @@
-package com.tally.db.classroom.repository;
+package com.tally.db.classroom.infrastructure.persistence;
 
-import com.tally.domain.classroom.entity.ClassRoom;
+import com.tally.domain.classroom.domain.entity.ClassRoom;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ClassRoomJpaRepository extends JpaRepository<ClassRoom, Long> {
