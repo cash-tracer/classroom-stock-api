@@ -5,7 +5,7 @@ Content-Type: application/json
 {
     "teacherId": 1,
     "classroomName": "성재반",
-    "classroomCode": "CLASS02",
+    "classroomCode": "CLASS03",
     "schoolCode": "SCHOOL01"
 }
 
